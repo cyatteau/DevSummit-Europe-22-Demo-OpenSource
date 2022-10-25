@@ -1,4 +1,4 @@
-const apiKey ="YOUR_API_KEY"
+const apiKey = "YOUR_API_KEY";
 
 import {
   geosearch,
