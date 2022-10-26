@@ -12,7 +12,9 @@ let searchInput = "";
 //create special icon
 import { showPlaces } from "./main3";
 //create Leaflet map container
-export const map = L.map(mapContainer).setView([lat, long], view);
+export const map = L.map("map-container", {
+  minZoom: 14,
+}).setView([lat, long], view);
 export const clickedLayerGroup = L.layerGroup().addTo(map);
 export const currentMarkers = [];
 export let clickedData = {};
@@ -88,17 +90,9 @@ vectorBasemapLayer("e16f851bdec647edba0498e186a5329c", {
 //   }
 // }
 
-
-
-
-
-
-
-
 if (searchInput == "") {
   theSearchInput.addTo(map);
 }
-
 
 // //handle getting results
 if (!query) {

@@ -1,8 +1,4 @@
-import {
-  map,
-  currentMarkers,
-
-} from "./main";
+import { map, currentMarkers } from "./main";
 const apiKey = "YOUR_API_KEY";
 import { geocode } from "esri-leaflet-geocoder";
 
@@ -12,7 +8,7 @@ export function showPlaces() {
   })
     .category("Post Office")
     .nearby(map.getCenter(), 1)
-    .run(function(err, response) {
+    .run(function (err, response) {
       for (const result of response.results) {
         const position = new L.LatLng(result.latlng.lat, result.latlng.lng);
         currentMarkers.push(
