@@ -10,6 +10,10 @@ This is a demostration of a post office asset locator. The application starts ou
 - [Demo](https://post-office-locator-leaflet-nominatim.netlify.app/) with Leaflet + Nominatim
 - [Demo](https://esri-leaflet-postoffice-asset-locator.netlify.app/) with Esri Leaflet + ArcGIS Location Services
 
+## Deploy the App to your Netlify
+This button allows you to create a copy of the application to your Github account and a deployed version to your Netlify account. Be sure to add the environment variable API_SECRET with the value set as your API Key. <br/><br/>
+<a target="_blank" href="https://app.netlify.com/start/deploy?repository=https://github.com/cyatteau/Deployed_Demo1_Euro22_DevSummit"><img src="https://www.netlify.com/img/deploy/button.svg"></img></a>
+
 ## Required Dependencies <a name="dep"></a>
 
 - `npm install leaflet --save`. Find API Reference info [here]().
